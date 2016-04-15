@@ -1,5 +1,5 @@
 
-@media (min-width: 601px) {
+@media (min-width: 1001px) {
 	.project-images{
 		left: 345px;
 		width: calc (100% - 390px);
@@ -14,7 +14,7 @@
 	}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
 	.project-images{
 		left: 0;
 		width: 100%;
@@ -29,7 +29,7 @@
 	}
 }
 
-@media (min-width: 601px) {
+@media (min-width: 1001px) {
 	.project-text-box{
 		background-color: #f1f1f2;
 		width: 300px;
@@ -40,7 +40,7 @@
 	}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
 	.project-text-box{
 		background-color: #f1f1f2;
 		width: 100%;
@@ -51,7 +51,7 @@
 	}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
 	.project-text {
 		width: calc(100% - 40px);
 		padding: 20px;
@@ -59,7 +59,7 @@
 	}
 }
 
-@media (min-width: 601px) {
+@media (min-width: 1001px) {
 	.project-text {
 		width: calc(100% - 90px);
 		left: 45px;
@@ -68,7 +68,7 @@
 	}
 }
 
-@media (min-width: 601px) {
+@media (min-width: 1001px) {
 	.heading-mobile {
 		height: 150px;
 		width: 100vw;
@@ -78,7 +78,7 @@
 	}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
 	.heading-mobile {
 		height: 140px;
 		width: 100vw;
