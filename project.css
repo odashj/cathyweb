@@ -6,6 +6,7 @@
 		position: relative;
 		top: 150px;
 		display: none;
+		margin-bottom: 45px;
 	}
 
 	.project-images img{
@@ -22,6 +23,7 @@
 		position: relative;
 		top: 140px;
 		display: none;
+		margin-bottom: 20px;
 	}
 
 	.project-images img{
@@ -89,4 +91,20 @@
 		position: fixed;
 		z-index: 10;
 	}
+}
+
+@media (min-width: 1001px) {
+.next{
+	width: 100%;
+	position: relative;
+	margin-left: -210px;
+}
+}
+
+@media (max-width: 1000px) {
+.next{
+	width: 100%;
+	position: relative;
+	margin-left: 0;
+}
 }
