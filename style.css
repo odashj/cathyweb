@@ -361,6 +361,17 @@ h2 a:hover {
 		z-index: 4;
 		display: none;
 	}
+
+	.thumbnails img {
+		-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+		filter: grayscale(100%);
+	}
+
+	.thumbnails img:hover {
+		-webkit-filter: none; /* Chrome, Safari, Opera */
+		filter: none;
+		cursor: pointer;
+	}
 }
 
 @media (max-width: 600px) {
@@ -373,17 +384,13 @@ h2 a:hover {
 		padding-bottom: 20px;
 		display: none;
 	}
-}
-.thumbnails img {
-	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-	filter: grayscale(100%);
+
+	.thumbnails img {
+		-webkit-filter: none; /* Chrome, Safari, Opera */
+		filter: none;
+	}
 }
 
-.thumbnails img:hover {
-	-webkit-filter: none; /* Chrome, Safari, Opera */
-	filter: none;
-	cursor: pointer;
-}
 
 @media (min-width: 1250px) {
 	.thumbnails img{
