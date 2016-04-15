@@ -418,7 +418,7 @@ h2 a:hover {
 @media (min-width: 1250px) {
 	.thumbnails img{
 		height: auto;
-		width: 29.35%;
+		width: calc(33% - 45px);
 		padding-right: 45px;
 		padding-bottom: 45px;
 		margin: auto;
@@ -429,7 +429,7 @@ h2 a:hover {
 	.thumbnails img{
 		margin: auto;
 		height: auto;
-		width: 45.05%;
+		width: calc(49.7% - 45px);
 		padding-right: 45px;
 		padding-bottom: 45px;
 	}
