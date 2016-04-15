@@ -51,6 +51,11 @@ body {
 	}
 }
 
+h1 a {
+	text-decoration: none;
+	color: #000000;
+}
+
 @media (min-width: 601px){
 	h2 {
 		font-family: 'Roboto Mono';
@@ -77,9 +82,9 @@ h3 {
 	p {
 		font-family: 'Roboto Mono';
 		font-weight: 500;
-		text-decoration: underline;
 		margin-bottom: 20px;
 		font-size: 16px;
+		line-height: 24px;
 	}
 }
 
@@ -87,9 +92,9 @@ h3 {
 	p {
 		font-family: 'Roboto Mono';
 		font-weight: 500;
-		text-decoration: underline;
 		margin-bottom: 20px;
 		font-size: 14px;
+		line-height: 22px;
 	}
 }
 
@@ -171,7 +176,8 @@ h2 a:hover {
 		height: 150px;
 		width: 100vw;
 		background-color: #ffffff;
-		position: relative;
+		position: fixed;
+		z-index: 5;
 	}
 }
 
@@ -350,8 +356,9 @@ h2 a:hover {
 		left: 45px;
 		height: auto;
 		position: relative;
-		top: 60px;
+		top: 210px;
 		padding-bottom: 15px;
+		z-index: 4;
 	}
 }
 
@@ -373,6 +380,7 @@ h2 a:hover {
 .thumbnails img:hover {
 	-webkit-filter: none; /* Chrome, Safari, Opera */
 	filter: none;
+	cursor: pointer;
 }
 
 @media (min-width: 1250px) {

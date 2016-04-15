@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --> 
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script> 
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:500|Roboto:700' rel='stylesheet' type='text/css'>
+  <link rel="icon" href="favicon.png">
+  <link href="style.css" rel="stylesheet">
+  <link href="project.css" rel="stylesheet">
+
+  <title>Project Title</title>
+
+</head>
+
+<body style="background-color: #ffffff" style="overflow-x: hidden">
+
+  <div class="wrapper">
+    <div class="heading-mobile">
+      <div class="name">
+        <h1><a href="index.html">Cathy Kwon</a></h1>
+      </div>
+
+      <div class="links">
+        <h2><a href="mailto:ckwon@mica.edu">contact</a> | <a href="https://www.behance.net/CathyKwon">behance</a></h2>
+      </div>
+      <div class="mobile-links">
+        <div class="mobile-link1">
+          <h2><a href="mailto:ckwon@mica.edu">contact</a></h2>
+        </div>
+        <div class="mobile-link2">
+          <h2><a href="https://www.behance.net/CathyKwon">behance</a></h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-text-box">
+      <div class="project-text">
+        <p style="text-decoration: underline">“Floating or Sinking?”</p>
+        <p>Tus maionse quossint
+          enis molupicius, corru
+          acepername veligen
+          imaximodis dolupid que
+          volecat inullatincto
+          dolectu rerest volo
+          moluptat officat que
+          re nus, consenieni dol
+          mosam fugiaes eos unt
+          officiatur si ut et
+          aut ea dollandi quat</p>
+          <p>Unt audisim que necae
+            optatia vellabor.</p>
+          </div>
+        </div>
+
+        <div class="project-images">
+          <img src="images/thumb.png">
+          <img src="images/thumb.png">
+          <img src="images/thumb.png">
+          <img src="images/thumb.png">
+          <img src="images/thumb.png">
+          <img src="images/thumb.png">
+        </div>
+      </div>
+
+
+
+    </body>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $count=1;
+        $('.openclose').click(function(){
+          if($count%2!=0)
+          {
+            $('.wrapper').animate({"marginLeft":"300px"},400,function(){
+            });
+            $('.openclose img').css({
+
+        //for firefox
+        "-moz-animation-name":"rotatebox",
+        "-moz-animation-duration":"300ms",
+        "-moz-animation-iteration-count":"1",
+        "-moz-animation-fill-mode":"forwards",
+
+        //for safari & chrome
+        "-webkit-animation-name":"rotatebox",
+        "-webkit-animation-duration":"300ms",
+        "-webkit-animation-iteration-count":"1",
+        "-webkit-animation-fill-mode" : "forwards",
+
+      });
+            $('.info').animate({"marginLeft":"0px"},400,function(){
+
+            });
+
+            $count++;
+          }
+          else
+          {
+            $('.wrapper').animate({"marginLeft":"0px"},400,function(){
+            });
+            $('.openclose img').css({
+
+        //for firefox
+        "-moz-animation-name":"rotatebox2",
+        "-moz-animation-duration":"300ms",
+        "-moz-animation-iteration-count":"1",
+        "-moz-animation-fill-mode":"forwards",
+
+        //for safari & chrome
+        "-webkit-animation-name":"rotatebox2",
+        "-webkit-animation-duration":"300ms",
+        "-webkit-animation-iteration-count":"1",
+        "-webkit-animation-fill-mode" : "forwards",
+
+      });
+            $('.info').animate({"marginLeft":"-300px"},400,function(){
+
+            });
+
+            $count++;
+          }
+        });
+      });
+
+    </script>
+
+    <!-- flyout for mobile -->
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $count=1;
+        $('.openclose-mobile').click(function(){
+          if($count%2!=0)
+          {
+            $('.thumbnails').animate({"marginLeft":"100vw"},400,function(){
+            });
+            $('.openclose-mobile img').css({
+
+        //for firefox
+        "-moz-animation-name":"rotatebox",
+        "-moz-animation-duration":"300ms",
+        "-moz-animation-iteration-count":"1",
+        "-moz-animation-fill-mode":"forwards",
+
+        //for safari & chrome
+        "-webkit-animation-name":"rotatebox",
+        "-webkit-animation-duration":"300ms",
+        "-webkit-animation-iteration-count":"1",
+        "-webkit-animation-fill-mode" : "forwards",
+
+      });
+            $('.info-mobile').animate({"marginLeft":"0px"},400,function(){
+
+            });
+
+            $count++;
+          }
+          else
+          {
+            $('.thumbnails').animate({"marginLeft":"0px"},400,function(){
+            });
+            $('.openclose-mobile img').css({
+
+        //for firefox
+        "-moz-animation-name":"rotatebox2",
+        "-moz-animation-duration":"300ms",
+        "-moz-animation-iteration-count":"1",
+        "-moz-animation-fill-mode":"forwards",
+
+        //for safari & chrome
+        "-webkit-animation-name":"rotatebox2",
+        "-webkit-animation-duration":"300ms",
+        "-webkit-animation-iteration-count":"1",
+        "-webkit-animation-fill-mode" : "forwards",
+
+      });
+            $('.info-mobile').animate({"marginLeft":"-100vw"},400,function(){
+
+            });
+
+            $count++;
+          }
+        });
+      });
+
+      $(function() {
+
+        var $body = $(document);
+        $body.bind('scroll', function() {
+        // "Disable" the horizontal scroll.
+        if ($body.scrollLeft() !== 0) {
+          $body.scrollLeft(0);
+        }
+      });
+
+      }); 
+    </script>
