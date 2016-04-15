@@ -5,6 +5,7 @@
 		width: calc (100% - 390px);
 		position: relative;
 		top: 150px;
+		display: none;
 	}
 
 	.project-images img{
@@ -20,6 +21,7 @@
 		width: 100%;
 		position: relative;
 		top: 140px;
+		display: none;
 	}
 
 	.project-images img{

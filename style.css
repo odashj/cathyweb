@@ -359,6 +359,7 @@ h2 a:hover {
 		top: 210px;
 		padding-bottom: 15px;
 		z-index: 4;
+		display: none;
 	}
 }
 
@@ -370,6 +371,7 @@ h2 a:hover {
 		position: relative;
 		top: 180px;
 		padding-bottom: 20px;
+		display: none;
 	}
 }
 .thumbnails img {
